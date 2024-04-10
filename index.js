@@ -45,7 +45,8 @@ function displayVehicleInventory(vehicles) {
     `;
         vehicleListElement.appendChild(vehicleItem);
     });
-}
+};
+console.log(displayVehicleInventory);
 
 function addVehicle(newVehicle) {
     fetch(vehicleEndpoints, {
@@ -70,7 +71,8 @@ function addVehicle(newVehicle) {
         .catch((error) => {
             console.error('Error:', error);
         });
-}
+};
+console.log(addVehicle);
 
 document.addEventListener("DOMContentLoaded", () => {
     const vehicleData = {
@@ -185,47 +187,40 @@ document.addEventListener("DOMContentLoaded", () => {
     vehicleData.Vehicles.forEach(vehicle => {
         const vehicleDiv = document.createElement("div");
         vehicleDiv.classList.add("vehicle");
-    
+
         const img = document.createElement("img");
         img.src = vehicle.poster;
         vehicleDiv.appendChild(img);
-    
+
         const detailsButton = document.createElement("button");
         detailsButton.textContent = "View Details";
         detailsButton.addEventListener("click", () => {
             showVehicleDetails(vehicle);
         });
         vehicleDiv.appendChild(detailsButton);
-    
+
         const purchaseButton = document.createElement("button");
         purchaseButton.textContent = "Purchase";
         purchaseButton.addEventListener("click", () => {
             purchaseVehicle(vehicle);
         });
         vehicleDiv.appendChild(purchaseButton);
-    
+
         vehicleListElement.appendChild(vehicleDiv);
     });
-    
-    function showVehicleDetails(vehicle) {
-        // Implement your code to show vehicle details
-    }
-    
+
+
     function purchaseVehicle(vehicle) {
         // Update the vehicle number
         vehicle['vehicle-no']--; // Assuming 'vehicle-no' is the property to represent vehicle number
-    
+
         // Call a function to update the vehicle data on the server
         updateVehicleData(vehicle);
-    
+
         // Display a message to the user confirming the purchase
         alert(`You have successfully purchased ${vehicle.model}. Vehicle number updated to ${vehicle['vehicle-no']}.`);
     }
-    
-    function updateVehicleData(vehicle) {
-        // Implement code to update the vehicle data on the server
-    }
-    
+    console.log(purchaseVehicle);
 
     function showVehicleDetails(vehicle) {
         // Construct a string containing all details of the vehicle
@@ -235,10 +230,11 @@ document.addEventListener("DOMContentLoaded", () => {
         details += `Price: ${vehicle.price}\n`;
         details += `Condition: ${vehicle.condition}\n`;
         details += `Vehicle Number: ${vehicle['vehicle-no']}\n`; // Note: 'vehicle-no' contains special character '-'
-        
+
         // Show the details in an alert dialog
         alert(details);
     }
+    console.log(showVehicleDetails);
 });
 
 const newModelEndpoints = 'http://localhost:3000/NewModels';
@@ -312,7 +308,8 @@ function displayNewModelDetails(newModels) {
     newModels.forEach(model => {
         alert(`Model: ${model.model}\nYear: ${model.year}\nMileage: ${model.mileage}\nPrice: ${model.price}\nCondition: ${model.condition}`);
     });
-}
+};
+console.log(displayNewModelDetails);
 
 document.addEventListener("DOMContentLoaded", () => {
     // Select the submit order button
@@ -322,7 +319,7 @@ document.addEventListener("DOMContentLoaded", () => {
     submitOrderBtn.addEventListener("click", () => {
         // Update the text content of the submit order button to "Order Placed"
         submitOrderBtn.textContent = "Order Placed";
-        
+
         // Optionally, you can disable the button after placing the order
         submitOrderBtn.disabled = true;
 
