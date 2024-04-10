@@ -6,6 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Audi Inventory Management</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional CSS for positioning the availability dropdown */
+        #availabilitySection {
+            margin-top: 20px; /* Adjust as needed */
+        }
+
+        #availabilityLabel {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        #availabilitySelect {
+            display: block;
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
@@ -27,14 +43,18 @@
             <input type="number" id="mileage" required><br>
             <label for="price">Price:</label>
             <input type="number" id="price" required><br>
-            <label for="availability">Availability:</label>
-            <select id="availability" required>
-                <option value="available">Available</option>
-                <option value="sold">Sold</option>
-                <option value="pending">Pending Sale</option>
-            </select><br>
-            <button type="submit">Add Vehicle</button>
         </form>
+    </section>
+
+    <!-- Availability dropdown -->
+    <section id="availabilitySection">
+        <h2>Availability</h2>
+        <label for="availabilitySelect" id="availabilityLabel">Availability:</label>
+        <select id="availabilitySelect" required>
+            <option value="available">Available</option>
+            <option value="sold">Sold</option>
+            <option value="pending">Pending Sale</option>
+        </select>
     </section>
 
     <!-- Display vehicle inventory -->
