@@ -5,9 +5,12 @@ body{
 }
 h1{
     font-size: large;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:cursive;
     color: brown;
 
+}
+h2{
+    font-size: large;
 }
 .vehicle {
     border: 1px solid #ccc;
@@ -42,8 +45,9 @@ h1{
     color: #fff;
     border: none;
     border-radius: 10px;
-    cursor: pointer;
+    cursor:context-menu;
     transition: background-color 0.3s ease;
+    float: right;
 }
 
 #viewNewModelsBtn:hover {
@@ -57,4 +61,21 @@ h1{
     padding: 5px 8px;
     margin-left: 5px;
     font-size: 12px;
+}
+.appearance::before {
+    content: '';
+    display: inline-block;
+    vertical-align: bottom;
+    overflow: hidden;
+    width: 0;
+    animation: typing 4s steps(50, end);
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
 }

@@ -259,6 +259,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
     const newModels = [
+        //Vehicle number shows the number of vehicles that are in stock at the moment
         {
             "id": "A1A",
             "model": "Audi R8",
