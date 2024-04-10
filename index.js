@@ -334,3 +334,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+function placeOrder(vehicleId) {
+    let selectedVehicle = newModels.find(vehicle => vehicle.id === vehicleId);
+    if (selectedVehicle) {
+        console.log(`Order placed for ${selectedVehicle.model}`);
+        // Additional logic to process the order
+    } else {
+        console.log('Vehicle not found');
+    }
+}
