@@ -185,57 +185,57 @@ document.addEventListener("DOMContentLoaded", () => {
     vehicleData.Vehicles.forEach(vehicle => {
         const vehicleDiv = document.createElement("div");
         vehicleDiv.classList.add("vehicle");
-    
+
         const img = document.createElement("img");
         img.src = vehicle.poster;
         vehicleDiv.appendChild(img);
-    
+
         const detailsButton = document.createElement("button");
         detailsButton.textContent = "View Details";
         detailsButton.addEventListener("click", () => {
             showVehicleDetails(vehicle);
         });
         vehicleDiv.appendChild(detailsButton);
-    
+
         const purchaseButton = document.createElement("button");
         purchaseButton.textContent = "Purchase";
         purchaseButton.addEventListener("click", () => {
             purchaseVehicle(vehicle);
         });
         vehicleDiv.appendChild(purchaseButton);
-    
+
         vehicleListElement.appendChild(vehicleDiv);
     });
-    
+
     function showVehicleDetails(vehicle) {
         // Implement your code to show vehicle details
     }
-    
+
     function purchaseVehicle(vehicle) {
         // Update the vehicle number
         vehicle['vehicle-no']--; // Assuming 'vehicle-no' is the property to represent vehicle number
-    
+
         // Call a function to update the vehicle data on the server
         updateVehicleData(vehicle);
-    
+
         // Display a message to the user confirming the purchase
         alert(`You have successfully purchased ${vehicle.model}. Vehicle number updated to ${vehicle['vehicle-no']}.`);
     }
-    
+
     function updateVehicleData(vehicle) {
         // Implement code to update the vehicle data on the server
     }
-    
+
 
     function showVehicleDetails(vehicle) {
         // Construct a string containing all details of the vehicle
-        let details = `Model: ${vehicle.model}\n`;
+        const details = `Model: ${vehicle.model}\n`;
         details += `Year: ${vehicle.year}\n`;
         details += `Mileage: ${vehicle.mileage}\n`;
         details += `Price: ${vehicle.price}\n`;
         details += `Condition: ${vehicle.condition}\n`;
         details += `Vehicle Number: ${vehicle['vehicle-no']}\n`; // Note: 'vehicle-no' contains special character '-'
-        
+
         // Show the details in an alert dialog
         alert(details);
     }
