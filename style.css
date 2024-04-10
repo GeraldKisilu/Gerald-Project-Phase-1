@@ -23,6 +23,10 @@ h2{
     max-width: 200px;
     height: auto;
 }
+button:hover {
+    background-color: rgb(202, 26, 26);
+}
+
 
 #availabilitySection {
     margin-top: 20px; /* Adjust as needed */
