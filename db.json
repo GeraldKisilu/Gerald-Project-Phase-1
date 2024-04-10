@@ -4,7 +4,7 @@
       "id": "AA",
       "model": "Audi Q3",
       "mileage": 11245,
-      "remaining": 19,
+      "vehicle-no": 19,
       "year": "2015",
       "price": "$28000",
       "condition": "Well maintained, dark blue alternative paint, leather interior.",
@@ -14,7 +14,7 @@
       "id": "BB",
       "model": "Audi Q5",
       "mileage": 10667,
-      "remaining": 7,
+      "vehicle-no": 7,
       "year": "2017",
       "price": "$29500",
       "condition": "Road worthy vehicle, off road beast with a 4Ltr capacity, 4000CC Engine capacity and extra body kit for off-roading activities.",
@@ -24,7 +24,7 @@
       "id": "CC",
       "model": "Audi TT",
       "mileage": 0,
-      "remaining": 8,
+      "vehicle-no": 8,
       "year": "2024",
       "price": "$35000",
       "condition": "Yellow but dangerous brand new on roading machine, suitable twin turbo with black interior, quite the consumer since it is a powerful and luxurious vehicle with a convertible roof.",
@@ -34,7 +34,7 @@
       "id": "DD",
       "model": "Audi RSq8",
       "mileage": 11,
-      "remaining": 13,
+      "vehicle-no": 13,
       "year": "2022",
       "price": "$76000",
       "condition": "New and orange, twin-turbo engine SUV, alternative for a lamborghini Urus, pure curative on a budget but same range as a supercar.",
@@ -44,7 +44,7 @@
       "id": "EE",
       "model": "Audi Rs6",
       "mileage": 26,
-      "remaining": 2,
+      "vehicle-no": 2,
       "year": "2023",
       "price": "$56000",
       "condition": "Brand new red-coupe vehicle that will get you from here to there yesterday(very fast), red interior,loud pipe an mtm with 4000CC and 800 Horse Power .",
@@ -54,7 +54,7 @@
       "id": "FF",
       "model": "Audi Rs7",
       "mileage": 1125,
-      "remaining": 1,
+      "vehicle-no": 1,
       "year": "2017",
       "price": "$47800",
       "condition": "German machines never disappoint, this racer is v8, grey in color and long-term road worthy.",
@@ -64,7 +64,7 @@
       "id": "GG",
       "model": "Audi A4",
       "mileage": 14598,
-      "remaining": 37,
+      "vehicle-no": 37,
       "year": "2015",
       "price": "$13890",
       "condition": "A beautiful and very comfortable family car, grey color and fuel friendly.",
@@ -74,7 +74,7 @@
       "id": "HH",
       "model": "Audi A6",
       "mileage": 15,
-      "remaining": 36,
+      "vehicle-no": 36,
       "year": "2024",
       "price": "$25000",
       "condition": "Brand new white A6, very comfortable with leather seats, family car with tv on both front seats head rests. ",
@@ -84,7 +84,7 @@
       "id": "II",
       "model": "Audi Q4",
       "mileage": 9997,
-      "remaining": 3,
+      "vehicle-no": 3,
       "year": "2021",
       "price": "$15000",
       "condition": "Undebatable condition, has covered a distance showing road worthiness and able to cover a long-term purpose.",
@@ -94,17 +94,46 @@
       "id": "JJ",
       "model": "Audi A8",
       "mileage": 0,
-      "remaining": 17,
+      "vehicle-no": 17,
       "year": "2024",
       "price": "$23000",
       "condition": "Brand new vehicle, black vintage paint.",
       "poster": "https://mediaservice.audi.com/media/cdb/data/3fe8efbd-f311-475a-8050-154c72fa9683.jpg"
     }
-],
-"NewModels": [
-  {
-
-  }
-]
+  ],
+  "NewModels": [
+    {
+      "id": "A1A",
+      "model": "Audi R8",
+      "mileage": 0,
+      "vehicle-no": 1,
+      "demand": 13,
+      "year": "2024",
+      "price": "$153000",
+      "condition": "Newest face of the Audi, v12 supercar, vintage with a speedometer running upto 350KM/H, twin turvo with three exhaust loud pipes and dangerous in color.",
+      "poster": ""
+    },
+    {
+      "id": "B2B",
+      "model": "Audi Rs7 Sportback",
+      "mileage": 0,
+      "vehicle-no": 1,
+      "demand": 27,
+      "year": "2024",
+      "price": "$116000",
+      "condition": "Brand new sportback with a streamlined body, you know what else is that streamlined;an aeroplane; supercar, fast vehicle with continuous tail lights, carbon fibre body and best of the best.",
+      "poster": ""
+    },
+    {
+      "id": "C3C",
+      "model": "Audi Rs6 Avant",
+      "mileage": 0,
+      "vehicle-no": 1,
+      "demand": 66,
+      "year": "2024",
+      "price": "$103000",
+      "condition": "Baddest on the road, this speed demon is quite spectacular, appeasing to the eye and body as well, a v8 withvariance in paint .",
+      "poster": ""
+    }
+  ]
 }
-
