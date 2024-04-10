@@ -220,7 +220,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Display a message to the user confirming the purchase
         alert(`You have successfully purchased ${vehicle.model}. Vehicle number updated to ${vehicle['vehicle-no']}.`);
     }
-    console.log(purchaseVehicle);
+    // console.log(purchaseVehicle);
 
     function showVehicleDetails(vehicle) {
         // Construct a string containing all details of the vehicle
@@ -238,7 +238,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const newModelEndpoints = 'http://localhost:3000/NewModels';
-console.log(newModelEndpoints);
+// console.log(newModelEndpoints);
 
 document.addEventListener("DOMContentLoaded", () => {
     //Fetch Vehicle data from the json server using the given url
