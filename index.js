@@ -257,9 +257,59 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    const newModels = [
+        {
+            "id": "A1A",
+            "model": "Audi R8",
+            "mileage": 0,
+            "vehicle-no": 1,
+            "demand": 13,
+            "year": "2024",
+            "price": "$153000",
+            "condition": "Newest face of the Audi, v12 supercar, vintage with a speedometer running upto 350KM/H, twin turvo with three exhaust loud pipes and dangerous in color.",
+            "poster": "https://cdn.motor1.com/images/mgl/VzM4p7/s3/audi-r8-japan-final-edition.jpg"
+        },
+        {
+            "id": "B2B",
+            "model": "Audi Rs7 Sportback",
+            "mileage": 0,
+            "vehicle-no": 1,
+            "demand": 27,
+            "year": "2024",
+            "price": "$116000",
+            "condition": "Brand new sportback with a streamlined body, you know what else is that streamlined;an aeroplane; supercar, fast vehicle with continuous tail lights, carbon fibre body and best of the best.",
+            "poster": "https://i.ytimg.com/vi/WiwM5ULI1F4/maxresdefault.jpg"
+        },
+        {
+            "id": "C3C",
+            "model": "Audi Rs6 Avant",
+            "mileage": 0,
+            "vehicle-no": 1,
+            "demand": 66,
+            "year": "2024",
+            "price": "$103000",
+            "condition": "Baddest on the road, this speed demon is quite spectacular, appeasing to the eye and body as well, a v8 withvariance in paint .",
+            "poster": "https://i0.wp.com/audiclubna.org/wp-content/uploads/Audi-RS-6-Avant-GT-471.jpg?ssl=1"
+        }
+    ];
 
+    const viewNewModelsBtn = document.getElementById("viewNewModelsBtn");
+    const notificationBadge = document.createElement("span");
+    notificationBadge.id = "notificationBadge";
+    notificationBadge.textContent = newModels.length.toString(); // Update the badge with the count of new models
+    viewNewModelsBtn.appendChild(notificationBadge);
 
+    // Add click event listener to the button
+    viewNewModelsBtn.addEventListener("click", () => {
+        displayNewModelDetails(newModels);
+    });
+});
 
-
-
+function displayNewModelDetails(newModels) {
+    // Implement your code to display the details of new models
+    newModels.forEach(model => {
+        alert(`Model: ${model.model}\nYear: ${model.year}\nMileage: ${model.mileage}\nPrice: ${model.price}\nCondition: ${model.condition}`);
+    });
+}
 

@@ -32,3 +32,29 @@ h1{
     display: block;
     width: 100%;
 }
+/* Add this CSS to center the button */
+#viewNewModelsBtn {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: gray;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#viewNewModelsBtn:hover {
+    background-color: #0056b3;
+}
+/* Add this CSS to style the notification badge */
+#notificationBadge {
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 8px;
+    margin-left: 5px;
+    font-size: 12px;
+}
