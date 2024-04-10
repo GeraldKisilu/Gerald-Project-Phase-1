@@ -1,0 +1,20 @@
+body{
+    background-image:url(Assets/audi-logo.jpg);
+    background-size:contain ;
+    background-repeat: repeat;
+}
+h1{
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    color: brown;
+
+}
+.vehicle {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.vehicle img {
+    max-width: 200px;
+    height: auto;
+}
