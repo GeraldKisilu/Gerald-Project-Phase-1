@@ -36,12 +36,12 @@ h1{
 #viewNewModelsBtn {
     display: block;
     margin: 0 auto;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 10px 30px;
+    font-size: 15px;
     background-color: gray;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
