@@ -19,3 +19,16 @@ h1{
     height: auto;
 }
 
+#availabilitySection {
+    margin-top: 20px; /* Adjust as needed */
+}
+
+#availabilityLabel {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#availabilitySelect {
+    display: block;
+    width: 100%;
+}

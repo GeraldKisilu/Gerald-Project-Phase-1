@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 "id": "AA",
                 "model": "Audi Q3",
                 "mileage": 11245,
-                "remaining": 19,
+                "vehicle-no": 19,
                 "year": "2015",
                 "price": "$28000",
                 "condition": "Well maintained, dark blue alternative paint, leather interior.",
@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 "id": "BB",
                 "model": "Audi Q5",
                 "mileage": 10667,
-                "remaining": 7,
+                "vehicle-no": 7,
                 "year": "2017",
                 "price": "$29500",
                 "condition": "Road worthy vehicle, off road beast with a 4Ltr capacity, 4000CC Engine capacity and extra body kit for off-roading activities.",
@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 "id": "CC",
                 "model": "Audi TT",
                 "mileage": 0,
-                "remaining": 8,
+                "vehicle-no": 8,
                 "year": "2024",
                 "price": "$35000",
                 "condition": "Yellow but dangerous brand new on roading machine, suitable twin turbo with black interior, quite the consumer since it is a powerful and luxurious vehicle with a convertible roof.",
@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 "id": "DD",
                 "model": "Audi RSq8",
                 "mileage": 11,
-                "remaining": 13,
+                "vehicle-no": 13,
                 "year": "2022",
                 "price": "$76000",
                 "condition": "New and orange, twin-turbo engine SUV, alternative for a lamborghini Urus, pure curative on a budget but same range as a supercar.",
@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 "id": "EE",
                 "model": "Audi Rs6",
                 "mileage": 26,
-                "remaining": 2,
+                "vehicle-no": 2,
                 "year": "2023",
                 "price": "$56000",
                 "condition": "Brand new red-coupe vehicle that will get you from here to there yesterday(very fast), red interior,loud pipe an mtm with 4000CC and 800 Horse Power .",
@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 "id": "FF",
                 "model": "Audi Rs7",
                 "mileage": 1125,
-                "remaining": 1,
+                "vehicle-no": 1,
                 "year": "2017",
                 "price": "$47800",
                 "condition": "German machines never disappoint, this racer is v8, grey in color and long-term road worthy.",
@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 "id": "GG",
                 "model": "Audi A4",
                 "mileage": 14598,
-                "remaining": 37,
+                "vehicle-no": 37,
                 "year": "2015",
                 "price": "$13890",
                 "condition": "A beautiful and very comfortable family car, grey color and fuel friendly.",
@@ -149,7 +149,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 "id": "HH",
                 "model": "Audi A6",
                 "mileage": 15,
-                "remaining": 36,
+                "vehicle-no": 36,
                 "year": "2024",
                 "price": "$25000",
                 "condition": "Brand new white A6, very comfortable with leather seats, family car with tv on both front seats head rests. ",
@@ -159,7 +159,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 "id": "II",
                 "model": "Audi Q4",
                 "mileage": 9997,
-                "remaining": 3,
+                "vehicle-no": 3,
                 "year": "2021",
                 "price": "$15000",
                 "condition": "Undebatable condition, has covered a distance showing road worthiness and able to cover a long-term purpose.",
@@ -169,7 +169,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 "id": "JJ",
                 "model": "Audi A8",
                 "mileage": 0,
-                "remaining": 17,
+                "vehicle-no": 17,
                 "year": "2024",
                 "price": "$23000",
                 "condition": "Brand new vehicle, black vintage paint.",
@@ -185,20 +185,47 @@ document.addEventListener("DOMContentLoaded", () => {
     vehicleData.Vehicles.forEach(vehicle => {
         const vehicleDiv = document.createElement("div");
         vehicleDiv.classList.add("vehicle");
-
+    
         const img = document.createElement("img");
         img.src = vehicle.poster;
         vehicleDiv.appendChild(img);
-
+    
         const detailsButton = document.createElement("button");
         detailsButton.textContent = "View Details";
         detailsButton.addEventListener("click", () => {
             showVehicleDetails(vehicle);
         });
         vehicleDiv.appendChild(detailsButton);
-
+    
+        const purchaseButton = document.createElement("button");
+        purchaseButton.textContent = "Purchase";
+        purchaseButton.addEventListener("click", () => {
+            purchaseVehicle(vehicle);
+        });
+        vehicleDiv.appendChild(purchaseButton);
+    
         vehicleListElement.appendChild(vehicleDiv);
     });
+    
+    function showVehicleDetails(vehicle) {
+        // Implement your code to show vehicle details
+    }
+    
+    function purchaseVehicle(vehicle) {
+        // Update the vehicle number
+        vehicle['vehicle-no']--; // Assuming 'vehicle-no' is the property to represent vehicle number
+    
+        // Call a function to update the vehicle data on the server
+        updateVehicleData(vehicle);
+    
+        // Display a message to the user confirming the purchase
+        alert(`You have successfully purchased ${vehicle.model}. Vehicle number updated to ${vehicle['vehicle-no']}.`);
+    }
+    
+    function updateVehicleData(vehicle) {
+        // Implement code to update the vehicle data on the server
+    }
+    
 
     function showVehicleDetails(vehicle) {
         // Construct a string containing all details of the vehicle
