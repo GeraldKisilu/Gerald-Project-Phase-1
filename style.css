@@ -75,6 +75,17 @@ button:hover {
 #bookNewModelsBtn:hover {
     background-color: #0056b3;
 }
+#dealershipOrderBtn {
+    float: right;
+    background-color: gray;
+    color: white;
+    margin: 0 auto;
+    cursor: context-menu
+
+}
+#dealershipOrderBtn:hover {
+    background-color: #0056b3;
+}
 #notificationBadge {
     background-color: black;
     color: white;

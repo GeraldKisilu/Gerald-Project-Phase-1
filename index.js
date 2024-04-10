@@ -314,3 +314,19 @@ function displayNewModelDetails(newModels) {
     });
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+    // Select the submit order button
+    const submitOrderBtn = document.getElementById("dealershipOrderBtn");
+
+    // Add event listener to the submit order button
+    submitOrderBtn.addEventListener("click", () => {
+        // Update the text content of the submit order button to "Order Placed"
+        submitOrderBtn.textContent = "Order Placed";
+        
+        // Optionally, you can disable the button after placing the order
+        submitOrderBtn.disabled = true;
+
+        // You can also add additional logic here to handle the form submission, e.g., sending data to the server
+    });
+});
+
