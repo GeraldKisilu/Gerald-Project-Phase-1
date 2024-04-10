@@ -268,7 +268,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "demand": 13,
             "year": "2024",
             "price": "$153000",
-            "condition": "Newest face of the Audi, v12 supercar, vintage with a speedometer running upto 350KM/H, twin turvo with three exhaust loud pipes and dangerous in color.",
+            "condition": "Newest face of the Audi, v12 supercar, vintage with a speedometer running upto 350KM/H, twin turbo with three exhaust loud pipes and dangerous in color.",
             "poster": "https://cdn.motor1.com/images/mgl/VzM4p7/s3/audi-r8-japan-final-edition.jpg"
         },
         {
@@ -279,7 +279,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "demand": 27,
             "year": "2024",
             "price": "$116000",
-            "condition": "Brand new sportback with a streamlined body, you know what else is that streamlined;an aeroplane; supercar, fast vehicle with continuous tail lights, carbon fibre body and best of the best.",
+            "condition": "Brand new sportsback with a streamlined body, you know what else is that streamlined;an aeroplane; supercar, fast vehicle with continuous tail lights, carbon fibre body and best of the best.",
             "poster": "https://i.ytimg.com/vi/WiwM5ULI1F4/maxresdefault.jpg"
         },
         {
@@ -290,7 +290,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "demand": 66,
             "year": "2024",
             "price": "$103000",
-            "condition": "Baddest on the road, this speed demon is quite spectacular, appeasing to the eye and body as well, a v8 withvariance in paint .",
+            "condition": "Baddest on the road, this speed demon is quite spectacular, appeasing to the eye and body as well, a v8 with variance in paint .",
             "poster": "https://i0.wp.com/audiclubna.org/wp-content/uploads/Audi-RS-6-Avant-GT-471.jpg?ssl=1"
         }
     ];
