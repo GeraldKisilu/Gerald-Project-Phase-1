@@ -209,6 +209,9 @@ document.addEventListener("DOMContentLoaded", () => {
         vehicleListElement.appendChild(vehicleDiv);
     });
 
+    function showVehicleDetails(vehicle) {
+        // Implement your code to show vehicle details
+    }
 
     function purchaseVehicle(vehicle) {
         // Update the vehicle number
@@ -220,7 +223,11 @@ document.addEventListener("DOMContentLoaded", () => {
         // Display a message to the user confirming the purchase
         alert(`You have successfully purchased ${vehicle.model}. Vehicle number updated to ${vehicle['vehicle-no']}.`);
     }
-    // console.log(purchaseVehicle);
+    console.log(purchaseVehicle);
+
+    function updateVehicleData(vehicle) {
+        // Implement code to update the vehicle data on the server
+    }
 
     function showVehicleDetails(vehicle) {
         // Construct a string containing all details of the vehicle
