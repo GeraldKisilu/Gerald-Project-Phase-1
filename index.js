@@ -241,6 +241,23 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+const newModelEndpoints = 'http://localhost:3000/NewModels';
+console.log(newModelEndpoints);
+
+document.addEventListener("DOMContentLoaded", () => {
+    //Fetch Vehicle data from the json server using the given url
+    fetch(newModelEndpoints)
+        .then(response => response.json())
+        .then(data => {
+            // Process and display fetched vehicle data on the webpage
+            console.log(data);
+        })
+        .catch(error => {
+            console.error('Error fetching vehicle data:', error);
+        });
+});
+
+
 
 
 
