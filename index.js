@@ -351,6 +351,7 @@ bookButtons.forEach(button => {
     button.addEventListener('click', function () {
         // Update the button text to "Model Booked"
         this.textContent = "Model Booked";
+
     });
 });
 
