@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // Create a function to display vehicle inventory
 function displayVehicleInventory(vehicles) {
     const vehicleListElement = document.getElementById("vehicleList");
-    vehicleListElement.innerHTML = ""; 
+    vehicleListElement.innerHTML = "";
     vehicles.forEach(vehicle => {
         const vehicleItem = document.createElement("div");
         vehicleItem.innerHTML = `
@@ -296,7 +296,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const notificationBadge = document.createElement("span");
     notificationBadge.id = "notificationBadge";
     // Update the badge with the count of new models
-    notificationBadge.textContent = newModels.length.toString(); 
+    notificationBadge.textContent = newModels.length.toString();
     viewNewModelsBtn.appendChild(notificationBadge);
 
     // Add click event listener to the button
@@ -341,4 +341,17 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+
+// Get all the buttons with the class "bookBtn"
+const bookButtons = document.querySelectorAll('.bookBtn');
+
+// Loop through each button and add a click event listener
+bookButtons.forEach(button => {
+    button.addEventListener('click', function () {
+        // Update the button text to "Model Booked"
+        this.textContent = "Model Booked";
+    });
+});
+
 

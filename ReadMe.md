@@ -25,9 +25,9 @@ The required features are:
 https://geraldkisilu.github.io/Gerald-Project-Phase-1/
 
 ## Technical expectations
-FrontEnd: HTML, CSS
+FrontEnd: HTML, CSS,
 API’s
-Backend: JavaScrip
+Backend: JavaScript
 
 ## License 
 MIT LICENSE
