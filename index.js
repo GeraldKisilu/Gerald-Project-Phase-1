@@ -14,22 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 });
 
-document.getElementById("addVehicleForm").addEventListener("submit", (event) => {
-    event.preventDefault();
-    const formData = new FormData(event.target);
-    const newVehicle = {
-        id: formData.get("id"),
-        model: formData.get("model"),
-        year: parseInt(formData.get("year")),
-        mileage: parseInt(formData.get("mileage")),
-        price: formData.get("price"),
-        availability: "available" // Initial availability status
-    };
-    addVehicle(newVehicle);// Call the function to add the new vehicle
-    event.target.reset();// Reset the form fields after submission
-});
-
-
 function displayVehicleInventory(vehicles) {
     const vehicleListElement = document.getElementById("vehicleList");
     vehicleListElement.innerHTML = ""; // Clear previous content
@@ -333,13 +317,3 @@ document.addEventListener("DOMContentLoaded", () => {
         // You can also add additional logic here to handle the form submission, e.g., sending data to the server
     });
 });
-
-function placeOrder(vehicleId) {
-    let selectedVehicle = newModels.find(vehicle => vehicle.id === vehicleId);
-    if (selectedVehicle) {
-        console.log(`Order placed for ${selectedVehicle.model}`);
-        // Additional logic to process the order
-    } else {
-        console.log('Vehicle not found');
-    }
-}
