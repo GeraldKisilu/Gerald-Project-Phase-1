@@ -315,7 +315,7 @@ document.addEventListener("DOMContentLoaded", () => {
         submitOrderBtn.disabled = true;
 
         // Display an alert
-        alert("Order Placed. You will receive a confirmation notification shortly.");
+        alert("Order Placed. You will receive a confirmation message shortly.");
 
         // You can also add additional logic here to handle the form submission, e.g., sending data to the server
     });
