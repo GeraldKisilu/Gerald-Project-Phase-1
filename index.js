@@ -314,6 +314,9 @@ document.addEventListener("DOMContentLoaded", () => {
         // Optionally, you can disable the button after placing the order
         submitOrderBtn.disabled = true;
 
+        // Display an alert
+        alert("Order Placed. You will receive a confirmation notification shortly.");
+        
         // You can also add additional logic here to handle the form submission, e.g., sending data to the server
     });
 });
