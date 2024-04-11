@@ -335,15 +335,15 @@ function updateModelToBooked(modelId) {
                 body: JSON.stringify(model),
             })
                 .then(response => response.json())
-//                 .then(updatedModel => {
-//                     console.log('Model updated to booked:', updatedModel);
-//                     // Optionally, you can perform any additional actions after updating the model status
-//                 })
-//                 .catch(error => {
-//                     console.error('Error updating model status:', error);
-//                 });
-//         })
-//         .catch(error => {
-//             console.error('Error fetching model data:', error);
-//         });
-// };
+                .then(updatedModel => {
+                    console.log('Model updated to booked:', updatedModel);
+                    // Optionally, you can perform any additional actions after updating the model status
+                })
+                .catch(error => {
+                    console.error('Error updating model status:', error);
+                });
+        })
+        .catch(error => {
+            console.error('Error fetching model data:', error);
+        });
+};
