@@ -256,18 +256,18 @@ document.addEventListener("DOMContentLoaded", () => {
             "year": "2024",
             "price": "$153000",
             "condition": "Newest face of the Audi, v12 supercar, vintage with a speedometer running upto 350KM/H, twin turbo with three exhaust loud pipes and dangerous in color.",
-            "poster": "https://cdn.motor1.com/images/mgl/VzM4p7/s3/audi-r8-japan-final-edition.jpg"
+            "poster": "https://youtu.be/dux4hfKZA7o?t=14"
         },
         {
             "id": "B2B",
             "model": "Audi Rs7 Sportback",
-            "mileage": 0,
+            "mileage": 43,
             "vehicle-no": 1,
             "demand": 27,
             "year": "2024",
-            "price": "$116000",
+            "price": "$120.386",
             "condition": "Brand new sportsback with a streamlined body, you know what else is that streamlined;an aeroplane; supercar, fast vehicle with continuous tail lights, carbon fibre body and best of the best.",
-            "poster": "https://i.ytimg.com/vi/WiwM5ULI1F4/maxresdefault.jpg"
+            "poster": "https://youtu.be/vtF4GZzmpPk?t=9"
         },
         {
             "id": "C3C",
@@ -278,7 +278,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "year": "2024",
             "price": "$103000",
             "condition": "Baddest on the road, this speed demon is quite spectacular, appeasing to the eye and body as well, a v8 with variance in paint .",
-            "poster": "https://i0.wp.com/audiclubna.org/wp-content/uploads/Audi-RS-6-Avant-GT-471.jpg?ssl=1"
+            "poster": "https://youtu.be/IWfkihxtM9c?t=45"
         }
     ];
 
@@ -317,33 +317,3 @@ document.addEventListener("DOMContentLoaded", () => {
         // You can also add additional logic here to handle the form submission, e.g., sending data to the server
     });
 });
-
-function updateModelToBooked(modelId) {
-    // Fetch the model data from the server using the model ID
-    fetch(`${newModelEndpoints}/${modelId}`)
-        .then(response => response.json())
-        .then(model => {
-            // Update the model's status to "booked"
-            model.status = "booked";
-
-            // Send a PUT request to update the model data on the server
-            fetch(`${newModelEndpoints}/${modelId}`, {
-                method: 'PUT',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(model),
-            })
-                .then(response => response.json())
-                .then(updatedModel => {
-                    console.log('Model updated to booked:', updatedModel);
-                    // Optionally, you can perform any additional actions after updating the model status
-                })
-                .catch(error => {
-                    console.error('Error updating model status:', error);
-                });
-        })
-        .catch(error => {
-            console.error('Error fetching model data:', error);
-        });
-};
