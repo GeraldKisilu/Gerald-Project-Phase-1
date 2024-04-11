@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
             console.error('Error fetching vehicle data:', error);
         });
 });
-// reate a function to display vehicle inventory
+// Create a function to display vehicle inventory
 function displayVehicleInventory(vehicles) {
     const vehicleListElement = document.getElementById("vehicleList");
     vehicleListElement.innerHTML = ""; // Clear previous content
@@ -31,6 +31,7 @@ function displayVehicleInventory(vehicles) {
     });
 };
 console.log(displayVehicleInventory);
+
 
 function addVehicle(newVehicle) {
     fetch(vehicleEndpoints, {
@@ -58,6 +59,7 @@ function addVehicle(newVehicle) {
 };
 console.log(addVehicle);
 
+// Add an event listener to the objects with array data
 document.addEventListener("DOMContentLoaded", () => {
     const vehicleData = {
         "Vehicles": [
@@ -231,7 +233,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // Declare a variable to fetch data from the new models url
 const newModelEndpoints = 'http://localhost:3000/NewModels';
 console.log(newModelEndpoints);
-//add an event listener to fetch the response
+//Add an event listener to fetch the response
 document.addEventListener("DOMContentLoaded", () => {
     //Fetch Vehicle data from the json server using the given url
     fetch(newModelEndpoints)
@@ -316,8 +318,18 @@ document.addEventListener("DOMContentLoaded", () => {
         submitOrderBtn.disabled = true;
 
         // Display an alert
-        alert("Order Placed. Dedler **** will receive a confirmation Message shortly.");
+        alert("Order Placed. Dealer **** will receive a confirmation Message shortly.");
+        alert("Dear Dealer ****, we are glad to confirm to you that your order for ID **** MODEL **** YEAR **** MILE RANGE(*-*) has been placed. We will ensure punctuality in the delivery arrangement. Kindly make the necessary payments.");
 
-        // You can also add additional logic here to handle the form submission, e.g., sending data to the server
+        // Prompt the dealer to pay
+        const paymentConfirmation = prompt("Please confirm payment by entering the transaction 'S/NO.' if payment has been made.");
+
+        // Handle payment confirmation
+        if (paymentConfirmation === "paid") {
+            alert("Payment confirmed. Thank you for your prompt payment!");
+        } else {
+            alert("Payment not confirmed. Please make the necessary payment as soon as possible.");
+        }
     });
 });
+
