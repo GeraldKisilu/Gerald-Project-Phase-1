@@ -328,7 +328,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Display an alert
         alert("Order Placed. Dealer **** will receive a confirmation Message shortly.");
         // Another to confirm that the order has been placed
-        alert("Dear Dealer ****, we are glad to confirm to you that your order for ID **** MODEL **** YEAR **** MILE RANGE(*-*) has been placed. We will ensure punctuality in the delivery arrangement. Kindly make the necessary payments.");
+        alert("Dear Dealer ****, we are glad to confirm to you that your order for ID **** MODEL **** YEAR **** MILE RANGE(*-*) has been placed. We will ensure punctuality in the delivery arrangement. Kindly make the necessary payments, you will receive a prompt to enter the transaction S/NO.");
 
         // Prompt the dealer to pay
         const paymentConfirmation = prompt("Please confirm payment by entering the transaction 'S/NO.' if payment has been made.");
