@@ -317,3 +317,33 @@ document.addEventListener("DOMContentLoaded", () => {
         // You can also add additional logic here to handle the form submission, e.g., sending data to the server
     });
 });
+
+function updateModelToBooked(modelId) {
+    // Fetch the model data from the server using the model ID
+    fetch(`${newModelEndpoints}/${modelId}`)
+        .then(response => response.json())
+        .then(model => {
+            // Update the model's status to "booked"
+            model.status = "booked";
+
+            // Send a PUT request to update the model data on the server
+            fetch(`${newModelEndpoints}/${modelId}`, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(model),
+            })
+                .then(response => response.json())
+//                 .then(updatedModel => {
+//                     console.log('Model updated to booked:', updatedModel);
+//                     // Optionally, you can perform any additional actions after updating the model status
+//                 })
+//                 .catch(error => {
+//                     console.error('Error updating model status:', error);
+//                 });
+//         })
+//         .catch(error => {
+//             console.error('Error fetching model data:', error);
+//         });
+// };

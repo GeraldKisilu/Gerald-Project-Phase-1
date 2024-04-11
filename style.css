@@ -46,7 +46,6 @@ button:hover {
 .dropdown a{
     display: block;
     color: black;
-    text-decoration: none;
     padding: 10px 15px;
 }
 .dropdown .content{
@@ -157,6 +156,7 @@ p {
         width: 100%;
     }
 }
+
 
 footer {
     background-color: white;
