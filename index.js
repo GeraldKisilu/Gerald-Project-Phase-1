@@ -351,7 +351,8 @@ bookButtons.forEach(button => {
     button.addEventListener('click', function () {
         // Update the button text to "Model Booked"
         this.textContent = "Model Booked";
-
+        // Show an alert to the customer
+        alert("Dear customer, you have booked this new edition vehicle. We will get back to you for customization feedback.");
     });
 });
 
