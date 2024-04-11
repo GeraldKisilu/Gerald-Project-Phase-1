@@ -41,6 +41,7 @@ button:hover {
     border-radius: 10px;
     cursor: context-menu;
     transition: background-color 0.3s ease;
+    float: right;
 }
 .dropdown a{
     display: block;
@@ -49,7 +50,7 @@ button:hover {
     padding: 10px 15px;
 }
 .dropdown .content{
-    position: absolute;
+    float: right;
     background-color: #ffffff;
     box-shadow: 2px 2px 5px rgb(238, 71, 41);
     display: none;
@@ -58,7 +59,7 @@ button:hover {
     display: block;
 }
 .dropdown:hover button {
-    background-color: #cacaca;
+    background-color: #0056b3;
 }
 #availabilitySection {
     margin-top: 20px;
