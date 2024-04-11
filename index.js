@@ -316,7 +316,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Display an alert
         alert("Order Placed. You will receive a confirmation notification shortly.");
-        
+
         // You can also add additional logic here to handle the form submission, e.g., sending data to the server
     });
 });
+
+
