@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
             console.error('Error fetching vehicle data:', error);
         });
 });
-
+// reate a function to display vehicle inventory
 function displayVehicleInventory(vehicles) {
     const vehicleListElement = document.getElementById("vehicleList");
     vehicleListElement.innerHTML = ""; // Clear previous content
@@ -205,7 +205,7 @@ document.addEventListener("DOMContentLoaded", () => {
         updateVehicleData(vehicle);
 
         // Display a message to the user confirming the purchase
-        alert(`You have successfully purchased ${vehicle.model}. Vehicle number updated to ${vehicle['vehicle-no']}.`);
+        alert(`You have successfully purchased ${vehicle.model}. Vehicles remaining updated to ${vehicle['vehicle-no']}.`);
     }
     console.log(purchaseVehicle);
 
@@ -222,15 +222,16 @@ document.addEventListener("DOMContentLoaded", () => {
         details += `Condition: ${vehicle.condition}\n`;
         details += `Vehicle Number: ${vehicle['vehicle-no']}\n`; // Note: 'vehicle-no' contains special character '-'
 
-        // Show the details in an alert dialog
+        // Show the details in an alert 
         alert(details);
     }
     console.log(showVehicleDetails);
 });
 
+// Declare a variable to fetch data from the new models url
 const newModelEndpoints = 'http://localhost:3000/NewModels';
-// console.log(newModelEndpoints);
-
+console.log(newModelEndpoints);
+//add an event listener to fetch the response
 document.addEventListener("DOMContentLoaded", () => {
     //Fetch Vehicle data from the json server using the given url
     fetch(newModelEndpoints)
@@ -315,7 +316,7 @@ document.addEventListener("DOMContentLoaded", () => {
         submitOrderBtn.disabled = true;
 
         // Display an alert
-        alert("Order Placed. You will receive a confirmation Message shortly.");
+        alert("Order Placed. Dedler **** will receive a confirmation Message shortly.");
 
         // You can also add additional logic here to handle the form submission, e.g., sending data to the server
     });
