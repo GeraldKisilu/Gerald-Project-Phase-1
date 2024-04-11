@@ -1,35 +1,59 @@
-body{
-    background-image:url(Assets/audi-logo.jpg);
-    background-size:contain ;
+body {
+    background-image: url(Assets/audi-logo.jpg);
+    background-size: contain;
     background-repeat: repeat;
 }
-h1{
+
+h1 {
     font-size: xx-large;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     color: rgb(218, 16, 16);
     font: bold;
     background-color: white;
 
 }
-h2{
+
+h2 {
     font-size: large;
 }
+
 .vehicle {
     border: 1px solid #ccc;
     padding: 10px;
     margin-bottom: 10px;
 }
+
 .vehicle img {
     max-width: 200px;
     height: auto;
 }
+
 button:hover {
     background-color: rgb(238, 71, 41);
 }
-#
-
+.dropdown button{
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: gray;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: context-menu;
+    transition: background-color 0.3s ease;
+}
+.dropdown a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.dropdown .content{
+    
+}
 #availabilitySection {
-    margin-top: 20px; /* Adjust as needed */
+    margin-top: 20px;
+    /* Adjust as needed */
 }
 
 #availabilityLabel {
@@ -41,6 +65,7 @@ button:hover {
     display: block;
     width: 100%;
 }
+
 #viewNewModelsBtn {
     display: block;
     margin: 0 auto;
@@ -50,7 +75,7 @@ button:hover {
     color: #fff;
     border: none;
     border-radius: 10px;
-    cursor:context-menu;
+    cursor: context-menu;
     transition: background-color 0.3s ease;
     float: right;
 }
@@ -58,6 +83,7 @@ button:hover {
 #viewNewModelsBtn:hover {
     background-color: #0056b3;
 }
+
 #bookNewModelsBtn {
     display: block;
     margin: 0 auto;
@@ -67,7 +93,7 @@ button:hover {
     color: #fff;
     border: none;
     border-radius: 10px;
-    cursor:context-menu;
+    cursor: context-menu;
     transition: background-color 0.3s ease;
     float: right;
 }
@@ -75,17 +101,20 @@ button:hover {
 #bookNewModelsBtn:hover {
     background-color: #0056b3;
 }
+
 #dealershipOrderBtn {
+    border: none;
     float: right;
     background-color: gray;
     color: white;
     margin: 0 auto;
     cursor: context-menu
-
 }
+
 #dealershipOrderBtn:hover {
     background-color: #0056b3;
 }
+
 #notificationBadge {
     background-color: black;
     color: white;
@@ -94,10 +123,12 @@ button:hover {
     margin-left: 5px;
     font-size: 12px;
 }
-p{
+
+p {
     color: rgb(17, 15, 15);
     background-color: white;
 }
+
 .writing-animation::before {
     content: '';
     display: inline-block;
@@ -111,11 +142,13 @@ p{
     from {
         width: 0;
     }
+
     to {
         width: 100%;
     }
 }
-footer{
+
+footer {
     background-color: white;
     font-size: larger;
 }
