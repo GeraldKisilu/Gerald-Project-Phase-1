@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // Create a function to display vehicle inventory
 function displayVehicleInventory(vehicles) {
     const vehicleListElement = document.getElementById("vehicleList");
-    vehicleListElement.innerHTML = ""; // Clear previous content
+    vehicleListElement.innerHTML = ""; 
     vehicles.forEach(vehicle => {
         const vehicleItem = document.createElement("div");
         vehicleItem.innerHTML = `
@@ -172,31 +172,31 @@ document.addEventListener("DOMContentLoaded", () => {
 
     };
 
-
+    // Declare a variable to access vehicle list element from the DOM
     const vehicleListElement = document.getElementById("vehicleList");
-
+    // Give a loop for eah vehicle in the daa
     vehicleData.Vehicles.forEach(vehicle => {
         const vehicleDiv = document.createElement("div");
         vehicleDiv.classList.add("vehicle");
-
+        // Create an element to source the vehcles posters
         const img = document.createElement("img");
         img.src = vehicle.poster;
         vehicleDiv.appendChild(img);
-
+        //Create a button to view the details and add an event listener
         const detailsButton = document.createElement("button");
         detailsButton.textContent = "View Details";
         detailsButton.addEventListener("click", () => {
             showVehicleDetails(vehicle);
         });
         vehicleDiv.appendChild(detailsButton);
-
+        //Create a button to purchase and add an event listener
         const purchaseButton = document.createElement("button");
         purchaseButton.textContent = "Purchase";
         purchaseButton.addEventListener("click", () => {
             purchaseVehicle(vehicle);
         });
         vehicleDiv.appendChild(purchaseButton);
-
+        // Append the vehicle div from our HTML to the vehicle list element
         vehicleListElement.appendChild(vehicleDiv);
     });
 
@@ -206,7 +206,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function purchaseVehicle(vehicle) {
         // Update the vehicle number
-        vehicle['vehicle-no']--; // Assuming 'vehicle-no' is the property to represent vehicle number
+        vehicle['vehicle-no']--;
 
         // Call a function to update the vehicle data on the server
         updateVehicleData(vehicle);
@@ -227,8 +227,7 @@ document.addEventListener("DOMContentLoaded", () => {
         details += `Mileage: ${vehicle.mileage}\n`;
         details += `Price: ${vehicle.price}\n`;
         details += `Condition: ${vehicle.condition}\n`;
-        details += `Vehicle Number: ${vehicle['vehicle-no']}\n`; // Note: 'vehicle-no' contains special character '-'
-
+        details += `Vehicle Number: ${vehicle['vehicle-no']}\n`;
         // Show the details in an alert 
         alert(details);
     }
@@ -293,7 +292,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const viewNewModelsBtn = document.getElementById("viewNewModelsBtn");
     const notificationBadge = document.createElement("span");
     notificationBadge.id = "notificationBadge";
-    notificationBadge.textContent = newModels.length.toString(); // Update the badge with the count of new models
+    // Update the badge with the count of new models
+    notificationBadge.textContent = newModels.length.toString(); 
     viewNewModelsBtn.appendChild(notificationBadge);
 
     // Add click event listener to the button
@@ -324,6 +324,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Display an alert
         alert("Order Placed. Dealer **** will receive a confirmation Message shortly.");
+        // Another to confirm that the order has been placed
         alert("Dear Dealer ****, we are glad to confirm to you that your order for ID **** MODEL **** YEAR **** MILE RANGE(*-*) has been placed. We will ensure punctuality in the delivery arrangement. Kindly make the necessary payments.");
 
         // Prompt the dealer to pay
