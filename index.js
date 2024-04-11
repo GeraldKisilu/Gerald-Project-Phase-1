@@ -322,7 +322,6 @@ document.addEventListener("DOMContentLoaded", () => {
         // Update the text content of the submit order button to "Order Placed"
         submitOrderBtn.textContent = "Order Placed";
 
-        // Optionally, you can disable the button after placing the order
         submitOrderBtn.disabled = true;
 
         // Display an alert
@@ -333,7 +332,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Prompt the dealer to pay
         const paymentConfirmation = prompt("Please confirm payment by entering the transaction 'S/NO.' if payment has been made.");
 
-        // Handle payment confirmation
+        // Give a confirmation or a non-onfirmation alert
         if (paymentConfirmation === "paid") {
             alert("Payment confirmed. Thank you for your prompt payment!");
         } else {
@@ -343,10 +342,10 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-// Get all the buttons with the class "bookBtn"
+// Declare a variable to get all the buttons with the class "bookBtn"
 const bookButtons = document.querySelectorAll('.bookBtn');
 
-// Loop through each button and add a click event listener
+// Add a loop for each button and an even listener
 bookButtons.forEach(button => {
     button.addEventListener('click', function () {
         // Update the button text to "Model Booked"
