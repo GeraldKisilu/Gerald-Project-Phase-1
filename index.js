@@ -34,6 +34,7 @@ console.log(displayVehicleInventory);
 
 
 function addVehicle(newVehicle) {
+    //Send a post request to vehicleEndpoints
     fetch(vehicleEndpoints, {
         method: 'POST',
         headers: {
@@ -43,16 +44,20 @@ function addVehicle(newVehicle) {
     })
         .then(response => response.json())
         .then(data => {
+            //Log success message and update the vehicle inventory
             console.log('Success:', data);
+            // Fetch the updated vehicle inventory data
             fetch(vehicleEndpoints)
                 .then(response => response.json())
                 .then(data => {
+                    // Update the UI to display the updated vehicle inventory
                     displayVehicleInventory(data.Vehicles);
                 })
                 .catch(error => {
                     console.error('Error fetching vehicle data:', error);
                 });
         })
+        //If any error occurs during the process, catch the error and log it.
         .catch((error) => {
             console.error('Error:', error);
         });
