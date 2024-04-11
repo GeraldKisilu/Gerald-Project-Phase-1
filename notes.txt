@@ -1,7 +1,7 @@
 # MVP Features
 ##Required Features
 Add new vehicles  to the inventory by entering basic details such as make, model, year, mileage, and price.(DONE)
-Enable potential customers to make to order for limited edition as well as run out time for the production.
+Enable potential customers to make to order for limited edition as well as run out time for the production.(DONE)
 Customers should be able to see new models in stock as well as in dealerships(DONE)
 Customers should be able to update vehicle details such as pricing, availability status (e.g., available, sold, pending sale), and any other relevant information.(DONE)
 Customers should be able to view the current status of the inventory, including the number of available vehicles, sold vehicles, and vehicles pending sale.(DONE)

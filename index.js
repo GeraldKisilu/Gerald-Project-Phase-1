@@ -1,3 +1,6 @@
+// Write your project code here!
+
+//Fetch the data fron the json file created with the following limk
 const vehicleEndpoints = 'http://localhost:3000/Vehicles';
 console.log(vehicleEndpoints);
 
