@@ -1,13 +1,14 @@
 body {
-    background-image: url(Assets/audi-logo.jpg);
+    /* background-image: url(Assets/audi-logo.jpg); */
     background-size: contain;
     background-repeat: repeat;
+    background-color: white skyblue;
 }
 
 h1 {
     font-size: xx-large;
     font-family: 'Times New Roman', Times, serif;
-    color: rgb(218, 16, 16);
+    color: rgb(226, 62, 62);
     font: bold;
     background-color: white;
 
@@ -15,6 +16,7 @@ h1 {
 
 h2 {
     font-size: large;
+    background-color: rgba(226, 62, 62, 0.705);
 }
 
 .vehicle {
@@ -29,7 +31,8 @@ h2 {
 }
 
 button:hover {
-    background-color: rgb(238, 71, 41);
+    background-color: rgba(226, 62, 62, 0.705);
+    box-shadow: 2px 2px 5px rgb(2, 2, 2);
 }
 .dropdown button{
     margin: 0 auto;
@@ -50,19 +53,18 @@ button:hover {
 }
 .dropdown .content{
     float: right;
-    background-color: #ffffff;
-    box-shadow: 2px 2px 5px rgb(238, 71, 41);
+    background-color: white;
     display: none;
 }
 .dropdown:hover .content {
     display: block;
+    box-shadow: 3px 3px 6px rgba(226, 62, 62, 0.705);
 }
 .dropdown:hover button {
-    background-color: #0056b3;
+    background-color: #5a5d5f;
 }
 #availabilitySection {
     margin-top: 20px;
-    /* Adjust as needed */
 }
 
 #availabilityLabel {
@@ -90,7 +92,9 @@ button:hover {
 }
 
 #viewNewModelsBtn:hover {
-    background-color: #0056b3;
+    background-color: rgba(94, 88, 88, 0.842);
+    box-shadow: 3px 3px 6px rgba(226, 62, 62, 0.705);
+
 }
 
 #bookNewModelsBtn {
@@ -121,7 +125,12 @@ button:hover {
 }
 
 #dealershipOrderBtn:hover {
-    background-color: #0056b3;
+    background-color: rgba(94, 88, 88, 0.842);
+    box-shadow: 3px 3px 6px rgba(226, 62, 62, 0.705);
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 5px 20px;
+    border-radius: 10px;
 }
 
 #notificationBadge {
@@ -159,6 +168,6 @@ p {
 
 
 footer {
-    background-color: white;
+    background-color: rgba(226, 62, 62, 0.705);
     font-size: larger;
 }

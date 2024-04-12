@@ -355,4 +355,9 @@ bookButtons.forEach(button => {
     });
 });
 
+const darkmode = new Darkmode();
+darkmode.showWidget();
+
+
+
 
