@@ -11,7 +11,7 @@ Audi faces the challenge of effectively managing their inventory especially when
 
 ### Solution
 To address these challenges, this progam propose to simplify the process of adding new vehicles to inventory by allowing dealership staff to input relevant vehicle details such as make, model, year, vehicle identification number, mileage, condition and price.
-It also needs address the availability of demands for special and limited edition vehicles, enable easy updating of vehicle details, including changes in pricing, availability, and status. It also needs to look into dealerships with backor
+It also needs address the availability of demands for special and limited edition vehicles, enable easy updating of vehicle details, including changes in pricing, availability, and status. It also needs to look into dealerships with back orders.
 
 ### MVP Features
 The required features are:

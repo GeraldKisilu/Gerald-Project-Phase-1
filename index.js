@@ -1,6 +1,6 @@
 // Write your project code here!
 
-//Fetch the data fron the json file created with the following limk
+//Fetch the data from the json file created with the following link
 const vehicleEndpoints = 'http://localhost:3000/Vehicles';
 console.log(vehicleEndpoints);
 
@@ -354,8 +354,9 @@ bookButtons.forEach(button => {
         alert("Dear customer, you have booked this new edition vehicle. We will get back to you for customization feedback.");
     });
 });
-
+// Variable to create the dark mode feature
 const darkmode = new Darkmode();
+// Placement at the bottom right
 darkmode.showWidget();
 
 
